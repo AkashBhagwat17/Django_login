@@ -1,0 +1,277 @@
+{% extends 'base.html' %}{% load static %}
+
+
+{% block title %}Home{% endblock title %}
+{% block content %}
+<!-- slider start-->
+        <section class=" mb-5 ">
+                   <div id="demo" class="carousel slide" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" id="active">
+                      <img src="{% static 'images/1.png'%}" alt="Los Angeles" width="1100" height="700" id="active">
+                      <div class="carousel-caption">
+                        <h1 class="text-dark display-1 bg-light head" id="head">ALL IN ONE</h1>
+                        <h3 class="text-light text-capitalize dispay-1 bg-dark col-12 para" id="para">We provide all the government schemes in one platform</h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item" id="active">
+                      <img src="{%static 'images/2.jpg' %}" alt="Chicago" width="1100" height="700" id="active">
+                      <div class="carousel-caption">
+                        <h1 class="text-dark display-1 bg-light head" id="head">HEALTH & WELFARE</h1>
+                        <h3 class="text-light text-capitalize dispay-1 bg-dark col-12 para" id="para">We provide you all the information about health</h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item" >
+                      <img src="{%static 'images/3.jpg' %}" alt="New York" width="1100" height="700" id="active">
+                      <div class="carousel-caption">
+                        <h1 class="text-dark display-1 bg-light " id="head">EDUCATION</h1>
+                        <h3 class="text-light text-capitalize dispay-1 bg-dark col-12 " id="para">students related all the schemes are available here!</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+          </section>
+
+      <!--slider end -->
+
+      <!-- scheme content start-->
+      <section class="mt-5 mb-5">
+                <div class="container">
+                      <div id="accordion">
+                      <h1 class="text-center pt-5">Services we provide</h1>
+                      <hr class="w-25 mx-auto pb-5 ">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="agriculture.php">
+                      Agriculture
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a  href="agriculture.php#farmeraward" style="text-decoration:none; color:#000;">  Farmer Award</a></li>
+                            <li class="list-group-item"><a  href="agriculture.php#crop" style="text-decoration:none; color:#000;">Crop related</a></li>
+                            <li class="list-group-item"><a  href="agriculture.php#livestock" style="text-decoration:none; color:#000;">Livestock & Poultry related</a></li>
+                            <li class="list-group-item"><a  href="agriculture.php#fish" style="text-decoration:none; color:#000;">Fisheries related</a></li>
+                          </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      Health
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="health.php#central" style="text-decoration:none; color:#000;">Central</a></li>
+                            <li class="list-group-item"><a href="health.php#other" style="text-decoration:none; color:#000;">Other</a></li>
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                      Education
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                       <ul class="list-group list-group-flush">
+       <li class="list-group-item"><a href="education.php#central" style="text-decoration:none; color:#000;">Central</a></li>
+         <li class="list-group-item"><a href="education.php#technical" style="text-decoration:none; color:#000;">Technical</a></li>
+        <li class="list-group-item"><a href="social.php#entrepreneur" style="text-decoration:none; color:#000;">Scholarship</a></li>
+
+
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour">
+                      Social welfare
+                    </a>
+                  </div>
+                  <div id="collapsefour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+       <li class="list-group-item"><a href="social.php#backward" style="text-decoration:none; color:#000;">Backwardclass scheme</a></li>
+         <li class="list-group-item"><a href="social.php#di-able" style="text-decoration:none; color:#000;">Differently-abled Welfare</a></li>
+        <li class="list-group-item"><a href="social.php#entrepreneur" style="text-decoration:none; color:#000;">Entrepreneurship</a></li>
+       <li class="list-group-item"><a href="social.php#ngo" style="text-decoration:none; color:#000;">NGO-Voluntary Sector</a></li>
+       <li class="list-group-item"><a href="social.php#ruralproverty" style="text-decoration:none; color:#000;">Rural Poverty Alleviation</a></li>
+       <li class="list-group-item"><a href="social.php#scheduledcaste" style="text-decoration:none; color:#000;">Scheduled Caste</a></li>
+       <li class="list-group-item"><a href="social.php#seniorcitizen" style="text-decoration:none; color:#000;">Senior citizen</a></li>
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+          </div>
+
+      </section>
+      <!-- scheme content end-->
+
+      <!-- start -->
+          <div class="container">
+            <h1 class="text-center pt-5">Give me scheme</h1>
+                <hr class="w-25 mx-auto pb-5 ">
+                <div class="row">
+                  <div class="jumbotron col-md-12">
+                    <h1 class="display-4  text-capitalize">Please click below to get scheme</h1>
+                    <p class="lead">
+                      <a class="btn btn-primary btn-lg mt-2" href="form.php" target="blank" role="button">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+                </div>
+
+
+
+      <!-- about us start -->
+        <section class="mt-5 mb-5">
+          <div class="container">
+                <h1 class="text-center pt-5">About us</h1>
+                <hr class="w-25 mx-auto pb-5 ">
+                <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <img src="{% static 'images/nss.jpeg' %}" class="img-fluid " width="380px" height="380px">
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                  <h1 class="text-capitalize ">who are we?</h1>
+                  <hr>
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                  </p>
+                  <button class="text-capitalize btn btn-primary ">know more</button>
+                </div>
+                </div>
+          </div>
+        </section>
+      <!-- about us end -->
+
+      <!-- our guidenece start-->
+          <section class="mt-5 mb-5">
+                          <div class="container ">
+                          <h1 class="text-center pt-5">OUR GUIDENCE</h1>
+                          <hr class="w-25 mx-auto pb-5 ">
+                          <div class="row text-center">
+                            <div class="col-lg-4 col-md-4 col-12">
+                             <div class="card" >
+                    <img class="card-img-top" src="{% static 'images/stretched-1920-1080-663098.jpg'%}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Dr. Ravindra AcharyaS</h4>
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-4 col-12">
+                             <div class="card" >
+                    <img class="card-img-top" src="{% static 'images/stretched-1920-1080-663098.jpg'%}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Prof. Akashay Manikjade</h4>
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-4 col-12">
+                             <div class="card" >
+                    <img class="card-img-top" src="{%static 'images/stretched-1920-1080-663098.jpg'%}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Prof. Archana Ratnaparkhi</h4>
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+                      </div>
+                          </div>
+
+                        </div>
+                      </section>
+      <!-- our guidenece end-->
+      <!-- contact us start-->
+          <section class="mt-5 mb-5">
+                <div class="container">
+                    <h1 class="text-center pt-5">Contact</h1>
+                    <hr class="w-25 mx-auto pb-5 ">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="lnr lnr-home"></i>
+                                <h6>Pune , Maharashtra , India</h6>
+                                <p>VIIT College kondhwa bk, Pune</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-phone-handset"></i>
+                                <h6><a href="#">00  9865 562</a></h6>
+                                <p>Mon to Fri 9am to 6 pm</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-envelope"></i>
+                                <h6><a href="#">samanya@gmail.com</a></h6>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <form class="row contact_form"  method="post">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                               <button class="btn btn-primary">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                </div>
+          </section>
+
+      <!-- contact us end-->
+
+{% endblock content%}
